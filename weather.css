@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(148, 190, 212);
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    background-position: center center;
+}
+
+nav{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul{
+    display: flex; /*Items in nav bar will get horizontal*/
+    list-style-type: none;
+    align-items: center;
+    height: 75px;/*For making the nav bar black*/
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 66, 194);
+    
+}
+
+/*for changes in li which is inside nav ul*/
+nav ul li{
+
+    padding: 0 12px; /*tom bottom zero padding, right left 12px padding*/
+
+}
+#a1{
+    text-decoration: none;
+}
+/*For image inside the brand class*/
+.brand img{
+    width: 75px;
+    padding: 0 8px; /*tom bottom zero padding, right left 8px padding*/
+}
+
+.brand{ 
+    display: flex; 
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.weather{
+    margin: 0px 400px;
+    height:470px;
+ /*   background-color: rgb(100, 100, 240);*/
+    background: linear-gradient(135deg,#d1d0c393,#d1d0c393);
+    align-items: center;
+    border-radius: 30px;
+    color:rgb(5, 5, 5);
+}
+
+.weather h1{
+    padding: 15px 15px;
+}
+
+.search{
+
+    display:flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 60px 550px;
+    /*justify-content: space-between;*/
+}
+
+
+
+.search img{
+    width: 45px;
+    border-radius: 40px;
+    border:0;
+    outline:0;
+}
+
+.search button{
+    border-radius: 45px;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+
+.search input{
+  /*  flex:1;*/
+    border:0;
+    outline:0;
+    height: 40px;
+    width: 600px;
+    margin-right: 16px;
+    background-color: rgb(245, 251, 252);
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+  
+}
+
+.weathercondition img{
+    padding: 0 200px;
+    width: 30%;
+}
+
+.weathercondition h1{
+    color: rgb(10, 9, 9);
+    text-align: center;
+
+}
+
+.weathercondition h2{
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top:-6px;
+}
+
+.details{
+    display:flex;
+   /* align-items: center;*/
+    justify-content: space-between;
+   
+    margin-top: 30px;
+}
+
+.details img{
+    width:60px;
+}
+
+#col1 img{
+    padding: 0 100px;
+}
+#col2 img{
+    padding: 0 100px;
+}
+#col1 .write{
+    padding: 0 100px;
+}
+#col2 .write{
+    padding: 0 100px;
+}
+
+
+.weather{
+    display: none;
+}
+
+.error{
+
+    text-align:center;
+    font-size: 20px;
+    color: rgb(8, 3, 3);
+    display:none;
+}
+
+/*Below is the CSS styling for forescast.html */
+
+.searchNow{
+
+    display:flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 60px 550px;
+    /*justify-content: space-between;*/
+}
+
+
+
+.searchNow img{
+    width: 45px;
+    border-radius: 40px;
+    border:0;
+    outline:0;
+}
+
+.searchNow button{
+    border-radius: 45px;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+
+.searchNow input{
+  /*  flex:1;*/
+    border:0;
+    outline:0;
+    height: 40px;
+    width: 600px;
+    margin-right: 16px;
+    background-color: rgb(245, 251, 252);
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+  
+}
+
+.futureforecast{
+    background-color: #d1d0c393;
+    margin: 10px 180px;
+    height:300px;
+    display:flex;
+    color:rgb(15, 15, 15);
+    align-items: center;
+    justify-content: center;
+   
+    
+
+}
+
+.Remove{
+    display:none;
+}
+
+.futureforecast .forecast{
+
+    display:flex;
+    padding: 0 30px;
+}
+
+.futureforecast .today{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.futureforecast .today .day{
+    padding: 5px 15px;
+    background-color:rgb(129, 129, 125);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.futureforecast .today .temp{
+    font-size: 20px;
+    padding-top:15px;
+
+}
+
+.forecast .forecast-item{
+    padding:0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+forecast .forecast-item .img{
+    
+    
+}
+
+.forecast .forecast-item .day{
+    padding:5px 15px;
+    background-color: rgb(129, 129, 125);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.forecast .forecast-item .temp{
+    font-weight: 100;
+}
+
+@media only screen and (max-width:730){
+    .forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
